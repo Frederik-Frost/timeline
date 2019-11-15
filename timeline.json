@@ -1,0 +1,77 @@
+{
+  "battles": [
+    {
+      "movie": "1",
+      "battleName": "The battle for Middle Earth",
+      "timeStart": "00:02:25",
+      "timeEnd": "00:04:40",
+      "location": "Mordor",
+      "description": ""
+    },
+    {
+      "movie": "1",
+      "battleName": "Gandalf vs. Saruman",
+      "timeStart": "00:42:10",
+      "timeEnd": "00:43:04",
+      "location": "Isengard",
+      "description": ""
+    },
+
+    {
+      "movie": "1",
+      "battleName": "Aragorn vs. Nazgul",
+      "timeStart": "01:02:00",
+      "timeEnd": "01:04:40",
+      "location": "Weathertop",
+      "description": "The four Hobbits and Aragorn reach Weathertop at noon. Their camp is raided by the Black Riders at night and Frodo is stabbed with a Morgul Blade by the Witch King."
+    },
+    {
+      "movie": "1",
+      "battleName": "The Mines of Moria",
+      "timeStart": "01:55:42",
+      "timeEnd": "02:09:50",
+      "location": "Moria",
+      "description": ""
+    },
+    {
+      "movie": "1",
+      "battleName": "Fellowship of the ring vs. Urukhai",
+      "timeStart": "02:35:06",
+      "timeEnd": "02:41:55",
+      "location": "Argonath",
+      "description": "The breaking of the Fellowship of the Ring. Merry and Pippin are captured by Orcs from the North, Mordor and Isengard. Boromir is slain trying to protect them and his horn is heard in Minas Tirith. Frodo and Samwise enter the eastern Emyn Muil."
+    },
+    {
+      "movie": "2",
+      "battleName": "Riders of rohan vs. Urukhai",
+      "timeStart": "00:23:23",
+      "timeEnd": "00:24:03",
+      "location": "Fangorn Forrest",
+      "description": ""
+    },
+    {
+      "movie": "2",
+      "battleName": "Rohan vs. Warg riders",
+      "timeStart": "01:28:30",
+      "timeEnd": "01:31:00",
+      "location": "Rohan",
+      "description": ""
+    },
+    {
+      "movie": "2",
+      "battleName": "Helms deep",
+      "timeStart": "02:13:13",
+      "timeEnd": "02:40:19",
+      "location": "Helms deep",
+      "description": ""
+    },
+    {
+      "movie": "2",
+      "battleName": "Ents vs Isengard",
+      "timeStart": "02:40:20",
+      "timeEnd": "02:42:30",
+      "location": "Isengard",
+      "description": ""
+    }
+  ]
+}

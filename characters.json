@@ -1,0 +1,80 @@
+{
+  "characters": [
+    {
+      "name": "Frodo",
+      "img": "frodo.svg"
+    },
+    {
+      "name": "Sam",
+      "img": "sam.svg"
+    },
+    {
+      "name": "Gandalf",
+      "img": "gandalf.svg"
+    },
+    {
+      "name": "Gimli",
+      "img": "gimli.svg"
+    },
+    {
+      "name": "Legolas",
+      "img": "legolas.svg"
+    },
+    {
+      "name": "Aragorn",
+      "img": "aragorn.svg"
+    },
+    {
+      "name": "Boromir",
+      "img": "boromir.svg"
+    },
+    {
+      "name": "Men",
+      "img": "men.svg"
+    },
+    {
+      "name": "Elves",
+      "img": "elves.svg"
+    },
+    {
+      "name": "Saruman",
+      "img": "saruman.svg"
+    },
+    {
+      "name": "Sauron",
+      "img": "sauron.svg"
+    },
+    {
+      "name": "Gollum",
+      "img": "gollum.svg"
+    },
+    {
+      "name": "Orc",
+      "img": "orc.svg"
+    },
+    {
+      "name": "Urukhai",
+      "img": "urukhai.svg"
+    },
+    {
+      "name": "Nazgul",
+      "img": "nazgul.svg"
+    },
+    {
+      "name": "Cave troll",
+      "img": "cavetroll.svg"
+    },
+    {
+      "name": "Shelob",
+      "img": "shelob.svg"
+    },
+    {
+      "name": "Balrog",
+      "img": "balrog.svg"
+    },
+    {
+      "name": "Gandalf",
+      "img": "gandalf.svg"
+    }
+  ]
+}

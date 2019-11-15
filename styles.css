@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+p {
+  font-size: 200px;
+}
+
+#timeline {
+  background-color: blue;
+  height: 100vh;
+  width: 60vw;
+  overflow: scroll;
+}
+
+#map {
+  overflow: scroll;
+  height: 60vh;
+  width: 40vw;
+}
+
+#map img {
+  width: 100%;
+}
+
+#map img:hover {
+  transform: scale(2);
+}
+#scene {
+  background-color: green;
+  height: 40vh;
+  width: 40vw;
+}
