@@ -20,7 +20,7 @@ p {
   overflow: scroll;
 }
 
-#timeline img {
+#timeline svg {
   width: 100%;
   height: auto;
 }
