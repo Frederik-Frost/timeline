@@ -130,9 +130,9 @@ function loadJSON(battleIdentifier) {
 
 function showData(identifiedData) {
   document.querySelector(".battle_name").textContent = identifiedData.battleName;
-  document.querySelector(".battle_location").textContent = identifiedData.location;
-  document.querySelector(".time_start").textContent = identifiedData.timeStart;
-  document.querySelector(".time_end").textContent = identifiedData.timeEnd;
+  document.querySelector(".battle_location").textContent = "Battle location:" + identifiedData.location;
+  document.querySelector(".time_start").textContent = "Battle start:" + identifiedData.timeStart;
+  document.querySelector(".time_end").textContent = "Battle end:" + identifiedData.timeEnd;
   document.querySelector(".battle_description").textContent = identifiedData.description;
 
   // Frederiks code
