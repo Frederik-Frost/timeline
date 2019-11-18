@@ -54,7 +54,10 @@
 .modal {
   width: 50vw;
   height: 500px;
-  background: red;
+  background: url(img/1.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: none;
   position: absolute;
   left: 5vw;
   display: none;

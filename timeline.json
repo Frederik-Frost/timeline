@@ -49,7 +49,7 @@
     {
       "movie": "2",
       "battleName": "Riders of rohan vs. Urukhai",
-      "battleNumber": "5",
+      "battleNumber": "6",
       "timeStart": "00:23:23",
       "timeEnd": "00:24:03",
       "location": "Fangorn Forrest",
@@ -58,7 +58,7 @@
     {
       "movie": "2",
       "battleName": "Rohan vs. Warg riders",
-      "battleNumber": "6",
+      "battleNumber": "7",
       "timeStart": "01:28:30",
       "timeEnd": "01:31:00",
       "location": "Rohan",
@@ -67,7 +67,7 @@
     {
       "movie": "2",
       "battleName": "Helms deep",
-      "battleNumber": "7",
+      "battleNumber": "8",
       "timeStart": "02:13:13",
       "timeEnd": "02:40:19",
       "location": "Helms deep",
@@ -76,7 +76,7 @@
     {
       "movie": "2",
       "battleName": "Ents vs Isengard",
-      "battleNumber": "8",
+      "battleNumber": "9",
       "timeStart": "02:40:20",
       "timeEnd": "02:42:30",
       "location": "Isengard",
