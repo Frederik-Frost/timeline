@@ -3,6 +3,7 @@
     {
       "movie": "1",
       "battleName": "The battle for Middle Earth",
+      "battleNumber": "1",
       "timeStart": "00:02:25",
       "timeEnd": "00:04:40",
       "location": "Mordor",
@@ -11,6 +12,7 @@
     {
       "movie": "1",
       "battleName": "Gandalf vs. Saruman",
+      "battleNumber": "2",
       "timeStart": "00:42:10",
       "timeEnd": "00:43:04",
       "location": "Isengard",
@@ -20,6 +22,7 @@
     {
       "movie": "1",
       "battleName": "Aragorn vs. Nazgul",
+      "battleNumber": "3",
       "timeStart": "01:02:00",
       "timeEnd": "01:04:40",
       "location": "Weathertop",
@@ -28,6 +31,7 @@
     {
       "movie": "1",
       "battleName": "The Mines of Moria",
+      "battleNumber": "4",
       "timeStart": "01:55:42",
       "timeEnd": "02:09:50",
       "location": "Moria",
@@ -36,6 +40,7 @@
     {
       "movie": "1",
       "battleName": "Fellowship of the ring vs. Urukhai",
+      "battleNumber": "5",
       "timeStart": "02:35:06",
       "timeEnd": "02:41:55",
       "location": "Argonath",
@@ -44,6 +49,7 @@
     {
       "movie": "2",
       "battleName": "Riders of rohan vs. Urukhai",
+      "battleNumber": "5",
       "timeStart": "00:23:23",
       "timeEnd": "00:24:03",
       "location": "Fangorn Forrest",
@@ -52,6 +58,7 @@
     {
       "movie": "2",
       "battleName": "Rohan vs. Warg riders",
+      "battleNumber": "6",
       "timeStart": "01:28:30",
       "timeEnd": "01:31:00",
       "location": "Rohan",
@@ -60,6 +67,7 @@
     {
       "movie": "2",
       "battleName": "Helms deep",
+      "battleNumber": "7",
       "timeStart": "02:13:13",
       "timeEnd": "02:40:19",
       "location": "Helms deep",
@@ -68,6 +76,7 @@
     {
       "movie": "2",
       "battleName": "Ents vs Isengard",
+      "battleNumber": "8",
       "timeStart": "02:40:20",
       "timeEnd": "02:42:30",
       "location": "Isengard",
