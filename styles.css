@@ -38,8 +38,60 @@ p {
 #map img:hover {
   transform: scale(2);
 }
+
 #scene {
   background-color: green;
   height: 40vh;
   width: 40vw;
+
+  /* Chris */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.battleBox {
+}
+.svg {
+  width: 50px;
+}
+#goodLeft {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: blue;
+}
+#badRight {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.icon {
+  animation-name: icon;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+
+@keyframes icon {
+  0% {
+    opacity: 0;
+    transform: translateY(-10vw);
+  }
+
+  25% {
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  70% {
+    transform: translatey(2vw);
+  }
+
+  100% {
+    transform: translateY(0vw);
+  }
 }
