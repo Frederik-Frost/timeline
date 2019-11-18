@@ -165,6 +165,8 @@ function resetTimeline(mapIdentifier) {
   document.querySelector(".modal").style.display = "none";
   document.querySelector("#map svg").classList.remove("zoomin");
   document.querySelector(`#b${mapIdentifier}`).classList.remove("show-location");
+  good.innerHTML = "";
+  bad.innerHTML = "";
 }
 
 function test(target) {}
