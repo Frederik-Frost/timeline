@@ -9,10 +9,6 @@
   grid-template-columns: 3fr 2fr;
 }
 
-p {
-  font-size: 200px;
-}
-
 #timeline {
   background-color: blue;
   height: 100vh;
@@ -42,4 +38,21 @@ p {
   background-color: green;
   height: 40vh;
   width: 40vw;
+}
+
+.modal {
+  width: 50vw;
+  height: 500px;
+  background: red;
+  position: absolute;
+  left: 5vw;
+  display: none;
+  top: calc(50vh - 250px);
+  padding: 20px;
+}
+
+.modal h1,
+.modal h2,
+.modal p {
+  margin-bottom: 10px;
 }
