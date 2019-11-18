@@ -250,6 +250,7 @@
   <text transform="translate(698.3 2109.45)" font-size="15" font-family="MyriadPro-Regular, Myriad Pro">02:50</text>
   <text transform="translate(698.3 2139.45)" font-size="15" font-family="MyriadPro-Regular, Myriad Pro">02:55</text>
   <text transform="translate(698.3 2170.45)" font-size="15" font-family="MyriadPro-Regular, Myriad Pro">03:00</text>
+  <g class="battles">
   <circle id="battle1" cx="417" cy="19" r="16.5" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
   <circle id="battle2" cx="417" cy="245" r="16.5" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
   <circle id="battle3" cx="417" cy="381" r="16.5" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
@@ -259,4 +260,5 @@
   <circle id="battle8" cx="416.5" cy="1887.5" r="16.5" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
   <circle id="battle9" cx="416.5" cy="2050.5" r="16.5" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
   <circle id="battle5" cx="417" cy="934" r="16.5" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+  <g/>
 </svg>

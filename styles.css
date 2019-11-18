@@ -25,21 +25,32 @@ p {
   height: auto;
 }
 
+#map svg {
+  width: 100%;
+  height: auto;
+  transition: 1s ease-in-out;
+}
+
+.zoomin {
+  transform: scale(2.6);
+}
+
 #map {
   overflow: scroll;
   height: 60vh;
   width: 40vw;
 }
 
-#map img {
-  width: 100%;
-}
-
-#map img:hover {
-  transform: scale(2);
-}
 #scene {
   background-color: green;
   height: 40vh;
   width: 40vw;
+}
+
+.show-location {
+  opacity: 1;
+}
+
+.colorfill {
+  transition: 1s ease-in-out;
 }
