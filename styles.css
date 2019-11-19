@@ -69,8 +69,6 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.battleBox {
-}
 .svg {
   width: 70px;
 }
@@ -187,4 +185,19 @@ p {
 
 .battle:hover {
   cursor: url(img/active_sword.png), auto;
+}
+
+.dead {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: dash 5s linear alternate forwards;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
