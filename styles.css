@@ -20,7 +20,10 @@ h2 {
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1em;
+  font-family: "Times New Roman", Times, serif;
+  opacity: 0.8;
+  line-height: 2;
 }
 #wrapper {
   display: grid;
@@ -281,12 +284,10 @@ p {
   }
 }
 
-.battleBox {
-}
 .badSvg {
   width: 70px;
   display: inline-block;
-  padding-right: 6px;
+  margin-right: 6px;
 }
 .goodSvg {
   width: 70px;
@@ -305,7 +306,7 @@ p {
   width: 100%;
   overflow: auto;
   height: 100%;
-  border-left: black solid 3px;
+  border-left: rgba(0, 0, 0, 0.459) solid 3px;
 }
 .left {
   animation-name: left;
@@ -546,6 +547,7 @@ p {
   top: 0;
   left: 0;
   transition: 1s;
+  pointer-events: none;
 }
 
 .start_overlay button {
@@ -557,6 +559,7 @@ p {
   color: white;
   padding: 20px;
   font-size: 3em;
+  pointer-events: all;
 }
 
 .start_overlay button:hover {

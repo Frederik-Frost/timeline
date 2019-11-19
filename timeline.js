@@ -258,6 +258,7 @@ function bulletPressed() {
   document.querySelector(".modal").style.display = "block";
   let battleIdentifier = event.target.id.slice(6);
   loadJSON(battleIdentifier);
+  console.log("TEST");
 }
 
 function loadJSON(battleIdentifier) {
@@ -337,6 +338,11 @@ function initiateAnimations() {
 
 function startJourney() {
   document.querySelector(".start_overlay").style.opacity = "0";
+
+  document.querySelector(".start_overlay").addEventListener("transitionend", () => {
+    document.querySelector(".start_overlay").style.display = "none";
+  });
+
   document.querySelector(".audio").play();
   document.querySelector(".audio").playbackRate = 0.1;
 }
