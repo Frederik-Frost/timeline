@@ -102,6 +102,7 @@ function fetchSVG() {
       document.querySelector("#timeline").innerHTML = svg;
       start();
       loadJSONcharaters();
+      initiateAnimations();
     });
 }
 
@@ -109,6 +110,8 @@ function start() {
   bullets = document.querySelectorAll(".battle");
 
   bullets.forEach(button => {
+    button.classList.add("animation");
+    button.classList.add("animation--fade");
     button.addEventListener("click", bulletPressed);
   });
 }
@@ -169,4 +172,29 @@ function resetTimeline(mapIdentifier) {
   bad.innerHTML = "";
 }
 
-function test(target) {}
+function initiateAnimations() {
+  // callback function to do animations
+  const scrollImations = entries => {
+    entries.forEach(entry => {
+      // only do animation if the element is fully on screen
+      if (entry.isIntersecting && entry.intersectionRatio >= 0) {
+        entry.target.classList.add("animation--visible");
+        console.log("in sight");
+      } else {
+        console.log(entry);
+      }
+    });
+  };
+
+  // create the observer
+  const options = {
+    threshold: 0.1
+  };
+  const observer = new IntersectionObserver(scrollImations, options);
+
+  // target the elements to be observed
+  const animations = document.querySelectorAll(".animation");
+  animations.forEach(animation => {
+    observer.observe(animation);
+  });
+}
