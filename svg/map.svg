@@ -8209,6 +8209,9 @@
 <circle class="colorfill" id="b7" cx="2000" cy="1750"  r="50" fill= "rgba(255, 0, 0, 0.562)" opacity="0"></circle>
 <circle class="colorfill" id="b8" cx="1880" cy="1850"  r="50" fill= "rgba(255, 0, 0, 0.562)" opacity="0"></circle>
 <circle class="colorfill" id="b9" cx="1750" cy="1650"  r="50" fill= "rgba(255, 0, 0, 0.562)" opacity="0"></circle>
+<circle class="colorfill" id="b10" cx="2750" cy="2180"  r="50" fill= "rgba(255, 0, 0, 0.562)" opacity="0"></circle>
+<circle class="colorfill" id="b11" cx="2600" cy="2180"  r="50" fill= "rgba(255, 0, 0, 0.562)" opacity="0"></circle>
+<circle class="colorfill" id="b12" cx="3050" cy="2200"  r="50" fill= "rgba(255, 0, 0, 0.562)" opacity="0"></circle>
 </g>
 </g>
 
