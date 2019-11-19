@@ -60,19 +60,227 @@ p {
 }
 
 #scene {
-  background-color: green;
+  background: url(img/1.jpg);
   height: 40vh;
   width: 40vw;
 
   /* Chris */
-
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.none {
+  display: none;
+}
+.fightClub2 {
+  animation-name: fightClub2;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+
+@keyframes fightClub2 {
+  0% {
+    transform: translateX(-5px);
+  }
+  5% {
+    transform: translateX(5px);
+  }
+  10% {
+    transform: translateX(-5px);
+  }
+  15% {
+    transform: translateX(5px);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  35% {
+    transform: translateX(5px);
+  }
+  40% {
+    transform: translateX(-5px);
+  }
+  45% {
+    transform: translateX(5px);
+  }
+  55% {
+    transform: translateX(-5px);
+  }
+  60% {
+    transform: translateX(5px);
+  }
+  65% {
+    transform: translateX(-5px);
+  }
+  70% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  85% {
+    transform: translateX(-5px);
+  }
+  90% {
+    transform: translateX(5px);
+  }
+  95% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.fightClub {
+  animation-name: fightClub;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+
+@keyframes fightClub {
+  0% {
+    transform: translateX(5px);
+    float: right;
+  }
+  5% {
+    transform: translateX(-5px);
+  }
+  10% {
+    transform: translateX(5px);
+  }
+  15% {
+    transform: translateX(-5px);
+  }
+  20% {
+    transform: translateX(5px);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  30% {
+    transform: translateX(5px);
+  }
+  35% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  45% {
+    transform: translateX(-5px);
+  }
+  55% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  65% {
+    transform: translateX(5px);
+  }
+  70% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  85% {
+    transform: translateX(5px);
+  }
+  90% {
+    transform: translateX(-5px);
+  }
+  95% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+    float: right;
+  }
+}
+.dead {
+  animation-name: dead;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+
+@keyframes dead {
+  0% {
+    float: right;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100px);
+    float: right;
+    opacity: 0;
+  }
+}
+.dead2 {
+  animation-name: dead2;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+.floatyBoi {
+  float: right;
+}
+@keyframes dead2 {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+
 .battleBox {
 }
-.svg {
+.badSvg {
   width: 70px;
+  display: inline-block;
+  padding-right: 6px;
+}
+.goodSvg {
+  width: 70px;
+  padding-left: 6px;
+  display: inline-block;
 }
 .right {
   float: right;
@@ -81,16 +289,15 @@ p {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: blue;
 }
 #badRight {
   width: 100%;
   overflow: auto;
   height: 100%;
-  background-color: red;
+  border-left: black solid 3px;
 }
-.icon {
-  animation-name: icon;
+.left {
+  animation-name: left;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -98,23 +305,17 @@ p {
   animation-delay: 0s;
 }
 
-@keyframes icon {
+@keyframes left {
   0% {
     opacity: 0;
     transform: translatex(-5vw);
   }
-
-  25% {
-  }
-
   50% {
     opacity: 1;
   }
-
   70% {
     transform: translatex(2vw);
   }
-
   100% {
     transform: translatex(0vw);
   }
@@ -133,14 +334,9 @@ p {
     opacity: 0;
     transform: translatex(5vw);
   }
-
-  25% {
-  }
-
   50% {
     opacity: 1;
   }
-
   70% {
     transform: translatex(-2vw);
   }

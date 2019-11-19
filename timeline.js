@@ -25,67 +25,203 @@ function loadJSONcharaters() {
       document.querySelector("#battle7").addEventListener("click", b7);
       document.querySelector("#battle8").addEventListener("click", b8);
       document.querySelector("#battle9").addEventListener("click", b9);
+      document.querySelector("#battle10").addEventListener("click", b10);
+      document.querySelector("#battle11").addEventListener("click", b11);
+      document.querySelector("#battle12").addEventListener("click", b12);
 
       function b1() {
-        good.innerHTML = "";
-        bad.innerHTML = "";
-        good.innerHTML = `<img class="svg" src=svg/${src[7].img} />`;
-        bad.innerHTML = `<img class="svg" src=svg/${src[10].img} />`;
+        clearInnerHTML();
+        good.innerHTML = `<img class="goodSvg" src=svg/${src[7].img} />`;
+        bad.innerHTML = `<img class="badSvg target" src=svg/${src[10].img} />`;
+        enterFight();
         setTimeout(function() {
-          document.querySelectorAll(".svg").forEach(em => {
-            em.classList.add("icon");
-          });
-        }, 500);
+          fight();
+
+          setTimeout(function() {
+            fight2();
+          }, 3000);
+        }, 3000);
       }
       function b2() {
-        good.innerHTML = "";
-        bad.innerHTML = "";
-        good.innerHTML = `<img class="svg" src=svg/${src[2].img} />`;
-        bad.innerHTML = `<img class="svg right" src=svg/${src[9].img} />`;
+        clearInnerHTML();
+        good.innerHTML = `<img class="goodSvg" src=svg/${src[2].img} />`;
+        bad.innerHTML = `<img class="badSvg" src=svg/${src[9].img} />`;
+        enterFight();
+        setTimeout(function() {
+          fight();
+
+          setTimeout(function() {
+            fight2();
+          }, 3000);
+        }, 3000);
       }
       function b3() {
-        good.innerHTML = "";
-        bad.innerHTML = "";
-        good.innerHTML = `<img class="svg" src=svg/${src[5].img} />`;
-        bad.innerHTML = `<img class="svg right" src=svg/${src[14].img} />`;
+        clearInnerHTML();
+        good.innerHTML = `<img class="goodSvg" src=svg/${src[5].img} />`;
+        bad.innerHTML = `<img class="badSvg" src=svg/${src[14].img} />`;
+        enterFight();
+        setTimeout(function() {
+          fight();
+
+          setTimeout(function() {
+            fight2();
+          }, 3000);
+        }, 3000);
       }
       function b4() {
-        good.innerHTML = "";
-        bad.innerHTML = "";
-        good.innerHTML = `<img class="svg" src=svg/${src[0].img} /> <img class="svg" src=svg/${src[1].img} /> <img class="svg" src=svg/${src[2].img} /> <img class="svg" src=svg/${src[3].img} /> <img class="svg" src=svg/${src[4].img} /> <img class="svg" src=svg/${src[5].img} /> <img class="svg" src=svg/${src[6].img} />`;
-        bad.innerHTML = `<img class="svg right" src=svg/${src[12].img} /> <img class="svg right" src=svg/${src[15].img} /> <img class="svg right" src=svg/${src[17].img} />`;
+        clearInnerHTML();
+        good.innerHTML = `<img class="goodSvg" src=svg/${src[0].img} /> <img class="goodSvg" src=svg/${src[1].img} /> <img class="goodSvg" src=svg/${src[3].img} /> <img class="goodSvg" src=svg/${src[4].img} /> <img class="goodSvg" src=svg/${src[5].img} /> <img class="goodSvg" src=svg/${src[6].img} /><img class="goodSvg target2" src=svg/${src[2].img} />`;
+        bad.innerHTML = `<img class="badSvg target" src=svg/${src[12].img} /> <img class="badSvg target" src=svg/${src[15].img} /> <img class="badSvg target" src=svg/${src[17].img} />`;
+        enterFight();
+        setTimeout(function() {
+          fight();
+
+          setTimeout(function() {
+            fight2();
+          }, 3000);
+        }, 3000);
       }
       function b5() {
-        good.innerHTML = "";
-        bad.innerHTML = "";
-        good.innerHTML = `<img class="svg" src=svg/${src[0].img} /> <img class="svg" src=svg/${src[1].img} /> <img class="svg" src=svg/${src[2].img} /> <img class="svg" src=svg/${src[3].img} /> <img class="svg" src=svg/${src[4].img} /> <img class="svg" src=svg/${src[5].img} /> <img class="svg" src=svg/${src[6].img} />`;
-        bad.innerHTML = `<img class="svg right" src=svg/${src[13].img} /> `;
+        clearInnerHTML();
+        bad.innerHTML = `<img class="badSvg target" src=svg/${src[13].img} /> `;
+        good.innerHTML = `<img class="goodSvg" src=svg/${src[0].img} /> <img class="goodSvg" src=svg/${src[1].img} /> <img class="goodSvg" src=svg/${src[2].img} /> <img class="goodSvg" src=svg/${src[3].img} /> <img class="goodSvg" src=svg/${src[4].img} /> <img class="goodSvg" src=svg/${src[5].img} /> <img class="goodSvg target2" src=svg/${src[6].img} />`;
+        enterFight();
+        setTimeout(function() {
+          fight();
+
+          setTimeout(function() {
+            fight2();
+          }, 3000);
+        }, 3000);
       }
+
       function b6() {
-        good.innerHTML = "";
-        bad.innerHTML = "";
-        good.innerHTML = `<img class="svg" src=svg/${src[7].img} />`;
-        bad.innerHTML = `<img class="svg right" src=svg/${src[13].img} /><img class="svg right" src=svg/${src[12].img} />  `;
+        clearInnerHTML();
+        good.innerHTML = `<img class="goodSvg" src=svg/${src[7].img} />`;
+        bad.innerHTML = `<img class="badSvg target" src=svg/${src[13].img} /><img class="badSvg target" src=svg/${src[12].img} />  `;
+        enterFight();
+        setTimeout(function() {
+          fight();
+
+          setTimeout(function() {
+            fight2();
+          }, 3000);
+        }, 3000);
       }
       function b7() {
-        good.innerHTML = "";
-        bad.innerHTML = "";
-        good.innerHTML = `<img class="svg" src=svg/${src[7].img} /> <img class="svg" src=svg/${src[4].img} /> <img class="svg" src=svg/${src[3].img} /> <img class="svg" src=svg/${src[5].img} />`;
-        bad.innerHTML = `<img class="svg right" src=svg/${src[13].img} /><img class="svg right" src=svg/${src[12].img} />  `;
+        clearInnerHTML();
+        good.innerHTML = `<img class="goodSvg" src=svg/${src[7].img} /> <img class="goodSvg" src=svg/${src[4].img} /> <img class="goodSvg" src=svg/${src[3].img} /> <img class="goodSvg" src=svg/${src[5].img} />`;
+        bad.innerHTML = `<img class="badSvg target" src=svg/${src[13].img} /><img class="badSvg target" src=svg/${src[12].img} />  `;
+        enterFight();
+        setTimeout(function() {
+          fight();
+
+          setTimeout(function() {
+            fight2();
+          }, 3000);
+        }, 3000);
       }
       function b8() {
-        good.innerHTML = "";
-        bad.innerHTML = "";
-        good.innerHTML = `<img class="svg" src=svg/${src[7].img} /> <img class="svg" src=svg/${src[4].img} /> <img class="svg" src=svg/${src[3].img} /> <img class="svg" src=svg/${src[5].img} />`;
-        bad.innerHTML = `<img class="svg right" src=svg/${src[13].img} /><img class="svg right" src=svg/${src[12].img} />  `;
+        clearInnerHTML();
+        good.innerHTML = `<img class="goodSvg" src=svg/${src[7].img} /> <img class="goodSvg" src=svg/${src[4].img} /> <img class="goodSvg" src=svg/${src[3].img} /> <img class="goodSvg" src=svg/${src[5].img} />`;
+        bad.innerHTML = `<img class="badSvg target" src=svg/${src[13].img} /><img class="badSvg target" src=svg/${src[12].img} />  `;
+        enterFight();
+        setTimeout(function() {
+          fight();
+
+          setTimeout(function() {
+            fight2();
+          }, 3000);
+        }, 3000);
       }
       function b9() {
-        good.innerHTML = "";
-        bad.innerHTML = "";
-        good.innerHTML = `<img class="svg" src=svg/${src[18].img} />`;
-        bad.innerHTML = `<img class="svg right" src=svg/${src[13].img} /><img class="svg right" src=svg/${src[12].img} />  `;
+        clearInnerHTML();
+        good.innerHTML = `<img class="goodSvg" src=svg/${src[18].img} />`;
+        bad.innerHTML = `<img class="badSvg target" src=svg/${src[13].img} /><img class="badSvg target" src=svg/${src[12].img} />  `;
+        enterFight();
+        setTimeout(function() {
+          fight();
+
+          setTimeout(function() {
+            fight2();
+          }, 3000);
+        }, 3000);
+      }
+      function b10() {
+        clearInnerHTML();
+        good.innerHTML = `<img class="goodSvg" src=svg/${src[0].img} /> <img class="goodSvg" src=svg/${src[1].img} />`;
+        bad.innerHTML = `<img class="badSvg" src=svg/${src[16].img} /> `;
+        enterFight();
+        setTimeout(function() {
+          fight();
+
+          setTimeout(function() {
+            fight2();
+          }, 3000);
+        }, 3000);
+      }
+      function b11() {
+        clearInnerHTML();
+        good.innerHTML = `<img class="goodSvg" src=svg/${src[2].img} /> <img class="goodSvg" src=svg/${src[3].img} /><img class="goodSvg" src=svg/${src[4].img} /><img class="goodSvg" src=svg/${src[5].img} /> <img class="goodSvg" src=svg/${src[7].img} />`;
+        bad.innerHTML = `<img class="badSvg target" src=svg/${src[12].img} /><img class="badSvg target" src=svg/${src[14].img} /> `;
+        enterFight();
+        setTimeout(function() {
+          fight();
+
+          setTimeout(function() {
+            fight2();
+          }, 3000);
+        }, 3000);
+      }
+      function b12() {
+        clearInnerHTML();
+        good.innerHTML = `<img class="goodSvg" src=svg/${src[0].img} /> <img class="goodSvg" src=svg/${src[1].img} />`;
+        bad.innerHTML = `<img class="badSvg target" src=svg/${src[11].img} />`;
+        enterFight();
+        setTimeout(function() {
+          fight();
+
+          setTimeout(function() {
+            fight2();
+          }, 3000);
+        }, 3000);
       }
     });
+  function clearInnerHTML() {
+    good.innerHTML = "";
+    bad.innerHTML = "";
+  }
+  function enterFight() {
+    document.querySelectorAll(".goodSvg").forEach(em => {
+      em.classList.add("left");
+    });
+    document.querySelectorAll(".badSvg").forEach(em => {
+      em.classList.add("right");
+    });
+  }
+  function fight() {
+    document.querySelector(".badSvg").classList.remove("right");
+    document.querySelectorAll(".badSvg").forEach(em => {
+      em.classList.remove("right");
+      em.classList.add("fightClub");
+    });
+    document.querySelectorAll(".goodSvg").forEach(em => {
+      em.classList.remove("left");
+      em.classList.add("fightClub2");
+    });
+  }
+  function fight2() {
+    document.querySelectorAll(".badSvg").forEach(em => {
+      em.classList.remove("fightClub");
+      em.classList.add("floatyBoi");
+    });
+    document.querySelectorAll(".target").forEach(em => {
+      em.classList.add("dead");
+    });
+    document.querySelectorAll(".target2").forEach(em => {
+      em.classList.add("dead2");
+    });
+  }
 }
 function fetchMap() {
   fetch("svg/map.svg")
