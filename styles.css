@@ -6,6 +6,11 @@
   cursor: url(img/inactive_sword.png), auto;
 }
 
+body {
+  background: rgb(20, 52, 36);
+  background: linear-gradient(0deg, rgba(20, 52, 36, 1) 0%, rgba(101, 206, 151, 1) 100%);
+}
+
 h1 {
   font-size: 3em;
 }
@@ -22,11 +27,17 @@ p {
   grid-template-columns: 3fr 2fr;
 }
 
+#right {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
 #timeline {
-  background-color: blue;
-  height: 100vh;
-  width: 60vw;
-  overflow: scroll;
+  padding-top: 80px;
+  height: auto;
+  width: 600px;
+  margin: auto;
 }
 
 #timeline svg {
@@ -45,8 +56,8 @@ p {
 }
 
 #map {
-  overflow: scroll;
   height: 60vh;
+  overflow: scroll;
   width: 40vw;
   background: #f2edd7;
 }
@@ -162,7 +173,7 @@ p {
   background-position: center;
   background-size: 120%;
   background-repeat: repeat;
-  position: absolute;
+  position: fixed;
   left: 5vw;
   display: none;
   top: calc(50vh - 250px);
@@ -200,4 +211,142 @@ p {
   to {
     stroke-dashoffset: 0;
   }
+}
+
+.title_box {
+  text-align: center;
+  background: url(img/Classic-magical-movie-The-Lord-of-the-Rings_3840x1200.jpg);
+  background-size: 100%;
+  padding: 50px 0;
+  margin-bottom: -1px;
+}
+
+.title_box h1,
+.title_box h2 {
+  color: white;
+}
+
+.animation--fade.animation--visible {
+  opacity: 1;
+  transition: 0.4s;
+  transition-delay: 0.1s;
+}
+
+.animation--fade {
+  opacity: 0;
+}
+
+.animation {
+  opacity: 0;
+}
+
+.battle {
+  width: 30px;
+  height: 30px;
+  background: white;
+  position: absolute;
+  top: 0;
+  border-radius: 100%;
+  border: 1px solid black;
+  left: calc(30vw - 30px);
+  opacity: 0;
+}
+
+#battle1 {
+  top: 280px;
+}
+
+#battle2 {
+  top: 440px;
+}
+
+#battle3 {
+  top: 550px;
+}
+
+#battle4 {
+  top: 800px;
+}
+
+#battle5 {
+  top: 1000px;
+}
+
+#battle6 {
+  top: 1230px;
+}
+
+#battle7 {
+  top: 1540px;
+}
+
+#battle8 {
+  top: 1750px;
+}
+
+#battle9 {
+  top: 1850px;
+}
+
+#battle10 {
+  top: 2020px;
+}
+
+#battle11 {
+  top: 2220px;
+}
+
+#battle12 {
+  top: 2770px;
+}
+
+.battle_title1 {
+  width: 30px;
+  height: 30px;
+  background: white;
+  position: absolute;
+  top: 0;
+  border-radius: 100%;
+  border: 1px solid black;
+  left: calc(30vw - 30px);
+  top: 200px;
+  width: 60vw;
+  text-align: center;
+  background: none;
+  border: none;
+  left: 0;
+}
+
+.battle_title2 {
+  width: 30px;
+  height: 30px;
+  background: white;
+  position: absolute;
+  top: 0;
+  border-radius: 100%;
+  border: 1px solid black;
+  left: calc(30vw - 30px);
+  top: 1080px;
+  width: 60vw;
+  text-align: center;
+  background: none;
+  border: none;
+  left: 0;
+}
+
+.battle_title3 {
+  width: 30px;
+  height: 30px;
+  background: white;
+  position: absolute;
+  top: 0;
+  border-radius: 100%;
+  border: 1px solid black;
+  left: calc(30vw - 30px);
+  top: 1890px;
+  width: 60vw;
+  text-align: center;
+  background: none;
+  border: none;
+  left: 0;
 }
