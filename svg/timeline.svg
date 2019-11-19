@@ -7,13 +7,13 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 800 3438.1" style="enable-background:new 0 0 800 3438.1;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#65CE97;}
-	.st1{fill:#59AD7F;}
+	.st0{fill:#00000000;}
+	.st1{fill:#00000000;}
 	.st2{fill:none;stroke:#000000;stroke-miterlimit:10;}
 	.st3{font-family:'ArialMT';}
 	.st4{font-size:15px;}
 	.st5{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st6{fill:#539B72;}
+	.st6{fill:#00000000;}
 </style>
 <title>Artboard 1</title>
 <rect x="-0.5" class="st0" width="800" height="1086.5"/>
@@ -253,16 +253,7 @@
 <text transform="matrix(1 0 0 1 698.3 2109.45)" class="st3 st4">02:50</text>
 <text transform="matrix(1 0 0 1 698.3 2139.45)" class="st3 st4">02:55</text>
 <text transform="matrix(1 0 0 1 698.3 2170.45)" class="st3 st4">03:00</text>
-<g class="battles">
-<circle id="battle1" class="st5 battle" cx="417" cy="19" r="16.5"/>
-<circle id="battle2" class="st5 battle" cx="417" cy="245" r="16.5"/>
-<circle id="battle3" class="st5 battle" cx="417" cy="381" r="16.5"/>
-<circle id="battle4" class="st5 battle" cx="417" cy="704" r="16.5"/>
-<circle id="battle6" class="st5 battle" cx="416.5" cy="1225.5" r="16.5"/>
-<circle id="battle7" class="st5 battle" cx="416.5" cy="1617.5" r="16.5"/>
-<circle id="battle8" class="st5 battle" cx="416.5" cy="1887.5" r="16.5"/>
-<circle id="battle9" class="st5 battle" cx="416.5" cy="2050.5" r="16.5"/>
-<g/>
+
 <rect x="0.5" y="2173.1" class="st6" width="800" height="1265"/>
 <g>
 	<line class="st2" x1="633.5" y1="2173.1" x2="799.3" y2="2173.1"/>
@@ -378,9 +369,6 @@
 <text transform="matrix(1 0 0 1 698.3 3196.0999)" class="st3 st4">02:50</text>
 <text transform="matrix(1 0 0 1 698.3 3226.0999)" class="st3 st4">02:55</text>
 <text transform="matrix(1 0 0 1 698.3 3257.0999)" class="st3 st4">03:00</text>
-<circle id="battle10" class="st5 battle" cx="416.5" cy="2312.1" r="16.5"/>
-<circle id="battle11" class="st5 battle" cx="416.5" cy="2704.1" r="16.5"/>
-<circle id="battle12" class="st5 battle" cx="416.5" cy="2974.1" r="16.5"/>
 <line class="st2" x1="633.5" y1="3290.2" x2="799.3" y2="3290.2"/>
 <line class="st2" x1="633.5" y1="3320.4" x2="799.3" y2="3320.4"/>
 <line class="st2" x1="633.5" y1="3350.6" x2="799.3" y2="3350.6"/>
@@ -397,5 +385,4 @@
 <text transform="matrix(1 0 0 1 698.3 3348.7861)" class="st3 st4">03:15</text>
 <text transform="matrix(1 0 0 1 698.3 3378.7859)" class="st3 st4">03:20</text>
 <text transform="matrix(1 0 0 1 698.3 3408.7859)" class="st3 st4">03:25</text>
-<circle id="battle5" class="st5 battle" cx="417" cy="934" r="16.5"/>
 </svg>
