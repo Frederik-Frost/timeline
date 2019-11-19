@@ -144,17 +144,17 @@ function showData(identifiedData) {
 
   document.querySelector(`#b${mapIdentifier}`).classList.add("show-location");
   let bboxCircle = document.querySelector(`#b${mapIdentifier}`).getBBox();
-  console.log(bboxCircle.y);
+  // console.log(bboxCircle.y);
 
   let scaler1 = document.querySelector(`#b${mapIdentifier}`).getAttribute("cx");
   let scaler2 = document.querySelector(`#b${mapIdentifier}`).getAttribute("cy");
-  console.log(scaler1, scaler2);
+  // console.log(scaler1, scaler2);
 
   let calcX = Math.round(scaler1 / 39);
   let calcY = Math.round(scaler2 / 29);
 
-  console.log(calcX);
-  console.log(calcY);
+  // console.log(calcX);
+  // console.log(calcY);
 
   document.querySelector("#map svg").style.transformOrigin = `${calcX}% ${calcY}%`;
   document.querySelector("#map svg").classList.add("zoomin");
@@ -179,9 +179,7 @@ function initiateAnimations() {
       // only do animation if the element is fully on screen
       if (entry.isIntersecting && entry.intersectionRatio >= 0) {
         entry.target.classList.add("animation--visible");
-        console.log("in sight");
       } else {
-        console.log(entry);
       }
     });
   };

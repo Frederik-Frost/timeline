@@ -81,6 +81,33 @@
       "timeEnd": "02:42:30",
       "location": "Isengard",
       "description": "The Destruction of Isengard was a successful assault on Isengard launched by a large group of Ents. Persuaded by Treebeard to take action, they attacked Isengard and destroyed the fortress, although they could not bring down Orthanc. This was partially enabled by the fact that all the Uruk-hai had been sent to Rohan, leaving only weak Orcs behind."
+    },
+    {
+      "movie": "3",
+      "battleName": "Shelob vs. frodo",
+      "battleNumber": "10",
+      "timeStart": "01:28:30",
+      "timeEnd": "01:31:00",
+      "location": "Rohan",
+      "description": "Shelob's lair was Torech Ungol, below Cirith Ungol (Pass of the Spider), along the path that Frodo Baggins and Sam Gamgee took into Mordor, where Shelob had encountered Gollum during his previous trip to Mordor, and he apparently worshipped her. The Orcs of the Tower of Cirith Ungol called her Shelob the Great and Her Ladyship, and referred to Gollum as. Her Sneak. Sauron himself was aware of her existence, but left her alone, as a useful guard on the pass, and occasionally fed prisoners to her. In the story, Gollum led the Hobbits into her lair to himself recover the One Ring after she consumed them. She cornered them; but Frodo used the Phial of Galadriel's light to drive her off, and used Sting to cut the webs blocking the tunnel. Gollum waylaid the pair and tried to strangle Sam, while Shelob paralysed Frodo; whereafter Sam fought off Gollum and then wielded Sting against Shelob. Seeking to crush Sam, she instead impaled herself upon Sting; and was nearly blinded by the Phial of Galadriel; whereupon she fled. Thinking Frodo dead, Sam took the Ring from his friend and left his body behind, but discovered by listening to a pair of Orcs that Frodo was alive but senseless, under a minor influence of venom."
+    },
+    {
+      "movie": "3",
+      "battleName": "Battle of Minas Tirith",
+      "battleNumber": "11",
+      "timeStart": "02:13:13",
+      "timeEnd": "02:40:19",
+      "location": "Helms deep",
+      "description": "Neither side knew that Aragorn and the Grey Company, with the help of the Army of the Dead, had vanquished the fleet of the Corsairs. The Army of the Dead repaid their debt to the King by driving the Men of Umbar upon the ships mad, causing them to jump off of their ships and drown. After loading the ships with as many allies of Minas Tirith as possible, they sailed north to the battle. Upon arriving, the enemy found itself in a very disadvantageous position, with their enemies where (and when) they least expected. The extra reinforcements brought by Aragorn punched a wide salient within the most vulnerable area of the Mordor-host, severing the forces nearer to Minas Tirith and the ones close to the river Anduin. The Men of Gondor and the Rohirrim exploited this tactical advantage to the fullest, utterly routing the enemy with prolonged infantry charges and cavalry pursuit. The tactical and moral advantage granted by that was effective in turning the battle into a rout of the Mordor host. Most of the Mordor-host was slain and the rest fled back toward the Land of Shadow. Corpses of both Orcs and Men lay in colossal carrion piles while the few stragglers crossed the Anduin through Osgiliath or on barges. A strong force of Easterlings fought to the last man, and Gothmog rallied many evil servants across the Pelennor to fight while their other Orc companions-at-arms retreated like sheep pursued by wolves. While they were utterly wiped out by the now numerically superior Armies of the West, they inflicted considerable casualties among their foes.. The battle was over by sunset, with most enemies dead and a meager few fleeing."
+    },
+    {
+      "movie": "3",
+      "battleName": "Frodo vs. Gollum",
+      "battleNumber": "12",
+      "timeStart": "02:40:20",
+      "timeEnd": "02:42:30",
+      "location": "Isengard",
+      "description": "When Frodo and Sam had almost reached their destination, Gollum attacked them, but Frodo threw him down. Sam faced Gollum on his own, letting Frodo continue up the mountain to finish their mission. Like Bilbo and Frodo before him, Sam spared Gollum's life out of pity, and turned his back on the beaten (but still wily) creature and followed Frodo.      Moments later, Frodo stood on the edge of the Crack of Doom, but was unwilling to destroy the Ring, claiming it for himself and putting it on. Gollum struck again, and struggled with the invisible Frodo. Finally, Gollum bit off Frodo's finger and seized the Ring. He gloated over his prize, dancing madly, but stepped over the edge and fell into the lava, taking the Ring with him with a last cry of Precious! Thus, the Ring was destroyed and Sauron defeated. Sam cursed Gollum after his death, but Frodo urged his friend to forgive him, as without him the quest would have failed and the War of the Ring would have been lost. Tolkien later wrote that it was direct intervention by Eru Ilúvatar, Middle-earth's version of God, that led to Gollum's accident."
     }
   ]
 }
