@@ -7,6 +7,8 @@ let battles = [];
 const bad = document.querySelector("#badRight");
 const good = document.querySelector("#goodLeft");
 
+document.querySelector(".startJourney").addEventListener("click", startJourney);
+
 fetchMap();
 
 function loadJSONcharaters() {
@@ -196,3 +198,38 @@ function initiateAnimations() {
     observer.observe(animation);
   });
 }
+
+function startJourney() {
+  document.querySelector(".start_overlay").style.opacity = "0";
+  document.querySelector(".audio").play();
+  document.querySelector(".audio").playbackRate = 0.1;
+}
+
+function getDocHeight() {
+  var D = document;
+  return Math.max(D.body.scrollHeight, D.documentElement.scrollHeight, D.body.offsetHeight, D.documentElement.offsetHeight, D.body.clientHeight, D.documentElement.clientHeight);
+}
+
+var docheight = getDocHeight();
+
+function amountscrolled() {
+  var winheight = window.innerHeight || (document.documentElement || document.body).clientHeight;
+  var docheight = getDocHeight();
+  var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  var trackLength = docheight - winheight;
+  var pctScrolled = Math.floor((scrollTop / trackLength) * 100); // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
+
+  if (pctScrolled == 0) {
+    document.querySelector(".audio").playbackRate = 0.1;
+  } else {
+    document.querySelector(".audio").playbackRate = pctScrolled / 70;
+  }
+}
+
+window.addEventListener(
+  "scroll",
+  function() {
+    amountscrolled();
+  },
+  false
+);

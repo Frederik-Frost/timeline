@@ -192,7 +192,10 @@ p {
   height: 22px;
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2em;
 }
 
 .battle:hover {
@@ -244,11 +247,11 @@ p {
 .battle {
   width: 30px;
   height: 30px;
-  background: white;
+  background: rgba(255, 255, 255, 0.89);
   position: absolute;
   top: 0;
   border-radius: 100%;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.37);
   left: calc(30vw - 30px);
   opacity: 0;
 }
@@ -350,4 +353,29 @@ p {
   background: none;
   border: none;
   left: 0;
+}
+
+.start_overlay {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+
+.start_overlay button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  color: white;
+  padding: 20px;
+  font-size: 3em;
+}
+
+.start_overlay button:hover {
+  cursor: url(img/active_sword.png), auto;
 }
