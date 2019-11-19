@@ -178,6 +178,7 @@ p {
   display: none;
   top: calc(50vh - 250px);
   padding: 20px;
+  overflow: scroll;
 }
 
 .modal h1,
