@@ -436,8 +436,8 @@ window.addEventListener(
 let getGoodSVG = [];
 let getBadSVG = [];
 let urlLength = window.location.href;
-let urlLengthAndSvgLength = urlLength.length + 4;
-console.log(urlLengthAndSvgLength);
+let urlLengthAndSvgLength = urlLength.length - 6;
+console.log(urlLength);
 
 function getNameTag() {
   getGoodSVG = document.querySelectorAll(".goodSvg");
