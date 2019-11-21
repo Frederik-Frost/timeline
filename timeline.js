@@ -365,6 +365,7 @@ function resetTimeline(mapIdentifier) {
   good.classList.remove("lose");
   bad.classList.remove("lose");
   bad.classList.remove("win");
+  document.querySelector(".name_tag").innerHTML = "";
 }
 
 function initiateAnimations() {
@@ -434,6 +435,9 @@ window.addEventListener(
 
 let getGoodSVG = [];
 let getBadSVG = [];
+let urlLength = window.location.href;
+let urlLengthAndSvgLength = urlLength.length + 4;
+console.log(urlLengthAndSvgLength);
 
 function getNameTag() {
   getGoodSVG = document.querySelectorAll(".goodSvg");
@@ -442,7 +446,7 @@ function getNameTag() {
   getGoodSVG.forEach(button => {
     button.onmouseover = function() {
       let str = event.target.src;
-      let newString = str.substring(26, 100);
+      let newString = str.substring(urlLengthAndSvgLength, 100);
       let doneString = newString.slice(0, -4);
       let superDoneString = doneString.charAt(0).toUpperCase() + doneString.substring(1);
 
@@ -453,7 +457,7 @@ function getNameTag() {
   getBadSVG.forEach(button => {
     button.onmouseover = function() {
       let str = event.target.src;
-      let newString = str.substring(26, 100);
+      let newString = str.substring(urlLengthAndSvgLength, 100);
       let doneString = newString.slice(0, -4);
       let superDoneString = doneString.charAt(0).toUpperCase() + doneString.substring(1);
 
