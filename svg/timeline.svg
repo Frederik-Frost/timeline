@@ -18,6 +18,7 @@
 <rect x="-0.5" class="st0" width="800" height="1086.5"/>
 <rect x="0.5" y="1086.5" class="st1" width="800" height="1088.5"/>
 <g>
+
 	<line class="st2" x1="634" y1="0.4" x2="799.8" y2="0.4"/>
 	<line class="st2" x1="634" y1="30.6" x2="799.8" y2="30.6"/>
 	<line class="st2" x1="634" y1="60.8" x2="799.8" y2="60.8"/>
@@ -384,4 +385,9 @@
 <text transform="matrix(1 0 0 1 698.3 3348.7861)" class="st3 st4">03:15</text>
 <text transform="matrix(1 0 0 1 698.3 3378.7859)" class="st3 st4">03:20</text>
 <text transform="matrix(1 0 0 1 698.3 3408.7859)" class="st3 st4">03:25</text>
+
+
+
+
+
 </svg>

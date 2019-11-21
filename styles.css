@@ -46,6 +46,7 @@ p {
 #timeline svg {
   width: 100%;
   height: auto;
+  margin-top: 150px;
 }
 
 #map svg {
@@ -287,12 +288,14 @@ p {
 .badSvg {
   width: 70px;
   display: inline-block;
-  margin-right: 6px;
+  margin-right: 7px;
+  margin-top: 7px;
 }
 .goodSvg {
   width: 70px;
-  padding-left: 6px;
+  margin-left: 7px;
   display: inline-block;
+  margin-top: 7px;
 }
 .right {
   float: right;
@@ -489,6 +492,11 @@ p {
   top: 2570px;
 }
 
+#battle-wrapper {
+  position: absolute;
+  top: 150px;
+}
+
 .battle_title1 {
   width: 30px;
   height: 30px;
@@ -498,7 +506,7 @@ p {
   border-radius: 100%;
   border: 1px solid black;
   left: calc(30vw - 30px);
-  top: 200px;
+  top: 350px;
   width: 60vw;
   text-align: center;
   background: none;
@@ -515,7 +523,7 @@ p {
   border-radius: 100%;
   border: 1px solid black;
   left: calc(30vw - 30px);
-  top: 1080px;
+  top: 1220px;
   width: 60vw;
   text-align: center;
   background: none;
@@ -532,7 +540,7 @@ p {
   border-radius: 100%;
   border: 1px solid black;
   left: calc(30vw - 30px);
-  top: 1890px;
+  top: 2040px;
   width: 60vw;
   text-align: center;
   background: none;
@@ -582,4 +590,16 @@ p {
   100% {
     box-shadow: 0 0 5px 5px #f2edd7;
   }
+}
+
+.movie_time {
+  position: absolute;
+  left: calc(21vw - 30px);
+  top: 390px;
+  width: 60vw;
+  text-align: center;
+  background: none;
+  border: none;
+  font-size: 30px;
+  opacity: 0.8;
 }
