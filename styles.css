@@ -20,7 +20,10 @@ h2 {
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1em;
+  font-family: "Times New Roman", Times, serif;
+  opacity: 0.8;
+  line-height: 2;
 }
 #wrapper {
   display: grid;
@@ -245,12 +248,12 @@ p {
     transform: translateY(100px);
   }
   70% {
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     transform: translateY(100px);
     float: right;
-    opacity: 0;
+    opacity: 0.5;
   }
 }
 .dead2 {
@@ -273,20 +276,18 @@ p {
     transform: translateY(100px);
   }
   70% {
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     transform: translateY(100px);
-    opacity: 0;
+    opacity: 0.5;
   }
 }
 
-.battleBox {
-}
 .badSvg {
   width: 70px;
   display: inline-block;
-  padding-right: 6px;
+  margin-right: 6px;
 }
 .goodSvg {
   width: 70px;
@@ -296,6 +297,37 @@ p {
 .right {
   float: right;
 }
+.win {
+  animation-name: win;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+@keyframes win {
+  from {
+    background-color: none;
+  }
+  to {
+    background-color: rgba(255, 217, 0, 0.353);
+  }
+}
+.lose {
+  animation-name: lose;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+@keyframes lose {
+  from {
+    background-color: none;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.253);
+  }
+}
+
 #goodLeft {
   width: 100%;
   height: 100%;
@@ -305,7 +337,7 @@ p {
   width: 100%;
   overflow: auto;
   height: 100%;
-  border-left: black solid 3px;
+  border-left: rgba(0, 0, 0, 0.459) solid 3px;
 }
 .left {
   animation-name: left;
@@ -390,11 +422,15 @@ p {
   height: 22px;
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2em;
 }
 
 .battle:hover {
   cursor: url(img/active_sword.png), auto;
+  background: rgba(255, 255, 255, 0.562);
 }
 
 .title_box {
@@ -427,11 +463,11 @@ p {
 .battle {
   width: 30px;
   height: 30px;
-  background: white;
+  background: rgba(255, 255, 255, 0.89);
   position: absolute;
   top: 0;
   border-radius: 100%;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.37);
   left: calc(30vw - 30px);
   opacity: 0;
 }
@@ -533,4 +569,48 @@ p {
   background: none;
   border: none;
   left: 0;
+}
+
+.start_overlay {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  pointer-events: none;
+}
+
+.start_overlay button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  color: white;
+  padding: 20px;
+  font-size: 3em;
+  pointer-events: all;
+}
+
+.start_overlay button:hover {
+  cursor: url(img/active_sword.png), auto;
+}
+
+.battle {
+  animation: battle_bounce 2s infinite ease-in-out both;
+}
+
+@keyframes battle_bounce {
+  0% {
+    box-shadow: 0 0 5px 5px #f2edd7;
+  }
+
+  50% {
+    box-shadow: 0 0 5px 1px #f2edd7;
+  }
+  100% {
+    box-shadow: 0 0 5px 5px #f2edd7;
+  }
 }

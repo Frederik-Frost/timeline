@@ -7,6 +7,8 @@ let battles = [];
 const bad = document.querySelector("#badRight");
 const good = document.querySelector("#goodLeft");
 
+document.querySelector(".startJourney").addEventListener("click", startJourney);
+
 fetchMap();
 
 function loadJSONcharaters() {
@@ -39,8 +41,10 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+            good.classList.add("win");
+            bad.classList.add("lose");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b2() {
         clearInnerHTML();
@@ -52,8 +56,10 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+            bad.classList.add("win");
+            good.classList.add("lose");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b3() {
         clearInnerHTML();
@@ -65,8 +71,11 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b4() {
         clearInnerHTML();
@@ -78,8 +87,11 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b5() {
         clearInnerHTML();
@@ -91,8 +103,11 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
 
       function b6() {
@@ -105,8 +120,11 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b7() {
         clearInnerHTML();
@@ -118,8 +136,11 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b8() {
         clearInnerHTML();
@@ -131,8 +152,11 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b9() {
         clearInnerHTML();
@@ -144,8 +168,11 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b10() {
         clearInnerHTML();
@@ -157,8 +184,11 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b11() {
         clearInnerHTML();
@@ -170,8 +200,11 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b12() {
         clearInnerHTML();
@@ -180,11 +213,12 @@ function loadJSONcharaters() {
         enterFight();
         setTimeout(function() {
           fight();
-
           setTimeout(function() {
             fight2();
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
     });
   function clearInnerHTML() {
@@ -256,6 +290,7 @@ function bulletPressed() {
   document.querySelector(".modal").style.display = "block";
   let battleIdentifier = event.target.id.slice(6);
   loadJSON(battleIdentifier);
+  console.log("TEST");
 }
 
 function loadJSON(battleIdentifier) {
@@ -306,6 +341,10 @@ function resetTimeline(mapIdentifier) {
   document.querySelector(`#b${mapIdentifier}`).classList.remove("show-location");
   good.innerHTML = "";
   bad.innerHTML = "";
+  good.classList.remove("win");
+  good.classList.remove("lose");
+  bad.classList.remove("win");
+  bad.classList.remove("lose");
 }
 
 function initiateAnimations() {
@@ -332,3 +371,43 @@ function initiateAnimations() {
     observer.observe(animation);
   });
 }
+
+function startJourney() {
+  document.querySelector(".start_overlay").style.opacity = "0";
+
+  document.querySelector(".start_overlay").addEventListener("transitionend", () => {
+    document.querySelector(".start_overlay").style.display = "none";
+  });
+
+  document.querySelector(".audio").play();
+  document.querySelector(".audio").playbackRate = 0.1;
+}
+
+function getDocHeight() {
+  var D = document;
+  return Math.max(D.body.scrollHeight, D.documentElement.scrollHeight, D.body.offsetHeight, D.documentElement.offsetHeight, D.body.clientHeight, D.documentElement.clientHeight);
+}
+
+var docheight = getDocHeight();
+
+function amountscrolled() {
+  var winheight = window.innerHeight || (document.documentElement || document.body).clientHeight;
+  var docheight = getDocHeight();
+  var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  var trackLength = docheight - winheight;
+  var pctScrolled = Math.floor((scrollTop / trackLength) * 100); // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
+
+  if (pctScrolled == 0) {
+    document.querySelector(".audio").playbackRate = 0.1;
+  } else {
+    document.querySelector(".audio").playbackRate = pctScrolled / 70;
+  }
+}
+
+window.addEventListener(
+  "scroll",
+  function() {
+    amountscrolled();
+  },
+  false
+);
