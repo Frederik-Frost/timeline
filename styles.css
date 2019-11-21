@@ -632,6 +632,7 @@ div:hover > #hov {
   border-radius: 2px;
   font-size: 1.3em;
   transition: 1s;
+}
 .movie_time {
   position: absolute;
   left: calc(21vw - 30px);
