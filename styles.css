@@ -583,3 +583,45 @@ p {
     box-shadow: 0 0 5px 5px #f2edd7;
   }
 }
+
+.landing_title_box {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.landing_title_box h1 {
+  font-size: 4em;
+}
+
+.landing_title_box h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#hov {
+  display: none;
+  position: absolute;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+div:hover > #hov {
+  display: block;
+}
+
+.name_tag_box {
+  position: fixed;
+  right: 20vw;
+  transform: translate(50%, 0);
+  bottom: 20px;
+  background: rgb(112, 112, 112);
+  padding: 2px 10px;
+  color: white;
+  border-radius: 2px;
+  font-size: 1.3em;
+  transition: 1s;
+}

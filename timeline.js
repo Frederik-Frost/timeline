@@ -35,6 +35,8 @@ function loadJSONcharaters() {
         clearInnerHTML();
         good.innerHTML = `<img class="goodSvg" src=svg/${src[7].img} />`;
         bad.innerHTML = `<img class="badSvg target" src=svg/${src[10].img} />`;
+        getNameTag();
+
         enterFight();
         setTimeout(function() {
           fight();
@@ -48,6 +50,8 @@ function loadJSONcharaters() {
         clearInnerHTML();
         good.innerHTML = `<img class="goodSvg" src=svg/${src[2].img} />`;
         bad.innerHTML = `<img class="badSvg" src=svg/${src[9].img} />`;
+        getNameTag();
+
         enterFight();
         setTimeout(function() {
           fight();
@@ -61,6 +65,8 @@ function loadJSONcharaters() {
         clearInnerHTML();
         good.innerHTML = `<img class="goodSvg" src=svg/${src[5].img} />`;
         bad.innerHTML = `<img class="badSvg" src=svg/${src[14].img} />`;
+        getNameTag();
+
         enterFight();
         setTimeout(function() {
           fight();
@@ -74,6 +80,8 @@ function loadJSONcharaters() {
         clearInnerHTML();
         good.innerHTML = `<img class="goodSvg" src=svg/${src[0].img} /> <img class="goodSvg" src=svg/${src[1].img} /> <img class="goodSvg" src=svg/${src[3].img} /> <img class="goodSvg" src=svg/${src[4].img} /> <img class="goodSvg" src=svg/${src[5].img} /> <img class="goodSvg" src=svg/${src[6].img} /><img class="goodSvg target2" src=svg/${src[2].img} />`;
         bad.innerHTML = `<img class="badSvg target" src=svg/${src[12].img} /> <img class="badSvg target" src=svg/${src[15].img} /> <img class="badSvg target" src=svg/${src[17].img} />`;
+        getNameTag();
+
         enterFight();
         setTimeout(function() {
           fight();
@@ -87,6 +95,8 @@ function loadJSONcharaters() {
         clearInnerHTML();
         bad.innerHTML = `<img class="badSvg target" src=svg/${src[13].img} /> `;
         good.innerHTML = `<img class="goodSvg" src=svg/${src[0].img} /> <img class="goodSvg" src=svg/${src[1].img} /> <img class="goodSvg" src=svg/${src[2].img} /> <img class="goodSvg" src=svg/${src[3].img} /> <img class="goodSvg" src=svg/${src[4].img} /> <img class="goodSvg" src=svg/${src[5].img} /> <img class="goodSvg target2" src=svg/${src[6].img} />`;
+        getNameTag();
+
         enterFight();
         setTimeout(function() {
           fight();
@@ -101,6 +111,8 @@ function loadJSONcharaters() {
         clearInnerHTML();
         good.innerHTML = `<img class="goodSvg" src=svg/${src[7].img} />`;
         bad.innerHTML = `<img class="badSvg target" src=svg/${src[13].img} /><img class="badSvg target" src=svg/${src[12].img} />  `;
+        getNameTag();
+
         enterFight();
         setTimeout(function() {
           fight();
@@ -115,6 +127,8 @@ function loadJSONcharaters() {
         good.innerHTML = `<img class="goodSvg" src=svg/${src[7].img} /> <img class="goodSvg" src=svg/${src[4].img} /> <img class="goodSvg" src=svg/${src[3].img} /> <img class="goodSvg" src=svg/${src[5].img} />`;
         bad.innerHTML = `<img class="badSvg target" src=svg/${src[13].img} /><img class="badSvg target" src=svg/${src[12].img} />  `;
         enterFight();
+        getNameTag();
+
         setTimeout(function() {
           fight();
 
@@ -128,6 +142,8 @@ function loadJSONcharaters() {
         good.innerHTML = `<img class="goodSvg" src=svg/${src[7].img} /> <img class="goodSvg" src=svg/${src[4].img} /> <img class="goodSvg" src=svg/${src[3].img} /> <img class="goodSvg" src=svg/${src[5].img} />`;
         bad.innerHTML = `<img class="badSvg target" src=svg/${src[13].img} /><img class="badSvg target" src=svg/${src[12].img} />  `;
         enterFight();
+        getNameTag();
+
         setTimeout(function() {
           fight();
 
@@ -141,6 +157,8 @@ function loadJSONcharaters() {
         good.innerHTML = `<img class="goodSvg" src=svg/${src[18].img} />`;
         bad.innerHTML = `<img class="badSvg target" src=svg/${src[13].img} /><img class="badSvg target" src=svg/${src[12].img} />  `;
         enterFight();
+        getNameTag();
+
         setTimeout(function() {
           fight();
 
@@ -154,6 +172,8 @@ function loadJSONcharaters() {
         good.innerHTML = `<img class="goodSvg" src=svg/${src[0].img} /> <img class="goodSvg" src=svg/${src[1].img} />`;
         bad.innerHTML = `<img class="badSvg" src=svg/${src[16].img} /> `;
         enterFight();
+        getNameTag();
+
         setTimeout(function() {
           fight();
 
@@ -167,6 +187,8 @@ function loadJSONcharaters() {
         good.innerHTML = `<img class="goodSvg" src=svg/${src[2].img} /> <img class="goodSvg" src=svg/${src[3].img} /><img class="goodSvg" src=svg/${src[4].img} /><img class="goodSvg" src=svg/${src[5].img} /> <img class="goodSvg" src=svg/${src[7].img} />`;
         bad.innerHTML = `<img class="badSvg target" src=svg/${src[12].img} /><img class="badSvg target" src=svg/${src[14].img} /> `;
         enterFight();
+        getNameTag();
+
         setTimeout(function() {
           fight();
 
@@ -180,6 +202,8 @@ function loadJSONcharaters() {
         good.innerHTML = `<img class="goodSvg" src=svg/${src[0].img} /> <img class="goodSvg" src=svg/${src[1].img} />`;
         bad.innerHTML = `<img class="badSvg target" src=svg/${src[11].img} />`;
         enterFight();
+        getNameTag();
+
         setTimeout(function() {
           fight();
 
@@ -256,9 +280,11 @@ function start() {
 
 function bulletPressed() {
   document.querySelector(".modal").style.display = "block";
+  event.target.style.animation = "none";
+
+  document.querySelector("body").style.overflow = "hidden";
   let battleIdentifier = event.target.id.slice(6);
   loadJSON(battleIdentifier);
-  console.log("TEST");
 }
 
 function loadJSON(battleIdentifier) {
@@ -305,6 +331,8 @@ function showData(identifiedData) {
 
 function resetTimeline(mapIdentifier) {
   document.querySelector(".modal").style.display = "none";
+  document.querySelector("body").style.overflow = "scroll";
+
   document.querySelector("#map svg").classList.remove("zoomin");
   document.querySelector(`#b${mapIdentifier}`).classList.remove("show-location");
   good.innerHTML = "";
@@ -375,3 +403,33 @@ window.addEventListener(
   },
   false
 );
+
+let getGoodSVG = [];
+let getBadSVG = [];
+
+function getNameTag() {
+  getGoodSVG = document.querySelectorAll(".goodSvg");
+  getBadSVG = document.querySelectorAll(".badSvg");
+
+  getGoodSVG.forEach(button => {
+    button.onmouseover = function() {
+      let str = event.target.src;
+      let newString = str.substring(26, 100);
+      let doneString = newString.slice(0, -4);
+      let superDoneString = doneString.charAt(0).toUpperCase() + doneString.substring(1);
+
+      document.querySelector(".name_tag").innerHTML = superDoneString;
+    };
+  });
+
+  getBadSVG.forEach(button => {
+    button.onmouseover = function() {
+      let str = event.target.src;
+      let newString = str.substring(26, 100);
+      let doneString = newString.slice(0, -4);
+      let superDoneString = doneString.charAt(0).toUpperCase() + doneString.substring(1);
+
+      document.querySelector(".name_tag").innerHTML = superDoneString;
+    };
+  });
+}
