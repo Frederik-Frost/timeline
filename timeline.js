@@ -43,8 +43,10 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b2() {
         clearInnerHTML();
@@ -58,8 +60,10 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+            good.classList.add("lose");
+            bad.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b3() {
         clearInnerHTML();
@@ -73,8 +77,10 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b4() {
         clearInnerHTML();
@@ -88,8 +94,10 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b5() {
         clearInnerHTML();
@@ -103,8 +111,10 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
 
       function b6() {
@@ -119,8 +129,10 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b7() {
         clearInnerHTML();
@@ -134,8 +146,10 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b8() {
         clearInnerHTML();
@@ -149,8 +163,10 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b9() {
         clearInnerHTML();
@@ -164,8 +180,10 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b10() {
         clearInnerHTML();
@@ -179,8 +197,10 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b11() {
         clearInnerHTML();
@@ -194,8 +214,10 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
       function b12() {
         clearInnerHTML();
@@ -209,8 +231,10 @@ function loadJSONcharaters() {
 
           setTimeout(function() {
             fight2();
+            bad.classList.add("lose");
+            good.classList.add("win");
           }, 3000);
-        }, 3000);
+        }, 1500);
       }
     });
   function clearInnerHTML() {
@@ -337,6 +361,10 @@ function resetTimeline(mapIdentifier) {
   document.querySelector(`#b${mapIdentifier}`).classList.remove("show-location");
   good.innerHTML = "";
   bad.innerHTML = "";
+  good.classList.remove("win");
+  good.classList.remove("lose");
+  bad.classList.remove("lose");
+  bad.classList.remove("win");
 }
 
 function initiateAnimations() {
