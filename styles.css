@@ -399,6 +399,7 @@ p {
 
 .battle:hover {
   cursor: url(img/active_sword.png), auto;
+  background: rgba(255, 255, 255, 0.562);
 }
 
 .title_box {
@@ -564,4 +565,21 @@ p {
 
 .start_overlay button:hover {
   cursor: url(img/active_sword.png), auto;
+}
+
+.battle {
+  animation: battle_bounce 2s infinite ease-in-out both;
+}
+
+@keyframes battle_bounce {
+  0% {
+    box-shadow: 0 0 5px 5px #f2edd7;
+  }
+
+  50% {
+    box-shadow: 0 0 5px 1px #f2edd7;
+  }
+  100% {
+    box-shadow: 0 0 5px 5px #f2edd7;
+  }
 }
